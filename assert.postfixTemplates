@@ -1,8 +1,8 @@
 .assertnotnull : assert notNull
 	java.lang.Object → org.springframework.util.Assert.notNull($expr$, "$expr$ must not be null!");
 
-.hastext : assert hasText
+.asserthastext : assert hasText
     java.lang.String → org.springframework.util.Assert.hasText($expr$, "$expr$ must not be empty!");
     
-.notempty : assert Collection notempty
-    java.util.Collection → org.springframework.util.Assert.notEmpty($expr$, "$expr$ must not be empty!")
+.assertnotempty : assert Collection notEmpty
+    java.util.Collection → org.springframework.util.Assert.notEmpty($expr$, "$expr$ must not be empty!");
