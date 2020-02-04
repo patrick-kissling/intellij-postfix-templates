@@ -1,0 +1,5 @@
+.isempty : CollectionUtils.isEmpty
+    java.util.Collection → org.springframework.util.CollectionUtils.isEmpty($expr$);
+    
+.isnotempty : CollectionUtils.isNotEmpty
+    java.util.Collection → org.springframework.util.CollectionUtils.isNotEmpty($expr$);
